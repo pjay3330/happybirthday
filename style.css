@@ -1,0 +1,26 @@
+html, body{width:100%; height:100%;}
+.bx-wrapper, .bx-viewport, .slider{width:100%; height:100%;}
+.slider div{width:100%; height:100%; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat}
+
+.overlay{width:100%; height:100%; background: url("../images/ic_love.png"); position: absolute; top: 0; left: 0; z-index: 999}
+.contents{position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10}
+
+.contents > div:nth-of-type(1){position: absolute; top: 0; left: 50%; transform: translateX(-50%); color: #fff;z-index: 99}
+.contents > div:nth-of-type(1) p{text-align: center; text-shadow: 0 10px 10px rgba(0,0,0,.8); line-height: 1.3em; animation-name: typo; animation-duration: 10s; animation-direction: alternate; animation-iteration-count: 1; animation-fill-mode: both;}		
+.contents > div:nth-of-type(1) p:nth-of-type(1){font-size: 100px; font-weight: bold; color: #fff;}	
+.contents > div:nth-of-type(1) p:nth-of-type(2){font-size: 25px; color: #fff;}
+.contents > div:nth-of-type(1) p:nth-of-type(2){animation-delay: 2s;}
+
+.contents > div:nth-of-type(2){position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 90}
+.contents > div:nth-of-type(2) div{background-image: url("../images/12.png"); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; width:150px; height:150px;animation-name: cake ; animation-duration: 5s; animation-direction: alternate; animation-iteration-count: 1; animation-fill-mode: both;animation-delay: 1s;}
+
+@keyframes typo{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+@keyframes cake{
+	0%{opacity: 0; transform:  scale(3) translateY(100px)}
+	100%{opacity: .5; transform:  scale(1) translateY(0)}
+    
+}
